@@ -1,6 +1,6 @@
 # test_build
 
-first step was to pull down all of the disparate repos.
+first step, pull down all of the disparate repos.
 
 ## TODO
 
