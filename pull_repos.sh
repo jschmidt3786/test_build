@@ -14,7 +14,7 @@ WORKINGDIR=${HOME}/build
 pushd ${WORKINGDIR} 1> /dev/null
 
 # sync repositories
-REPOLIST="pcdapp linux phoenixphpclient gbgem gem gemadminclient jdce networkfeeds procentricbootstrapscripts procentriclicensebuilder procentriclicenseutils procentrictlxutils procentricupdatesbuilder triveniepg"
+REPOLIST="pcdapp linux phoenixphpclient gbgem gem gemadminclient jdce networkfeeds procentricbootstrapscripts procentriclicensebuilder procentriclicenseutils procentrictlxutils procentricupdatesbuilder triveniepg pcn"
 for repo in ${REPOLIST} ; do
   if [[ -d ${repo} ]] ;then
     echo fetching changes in ${repo} repository
@@ -40,6 +40,7 @@ for repo in ${REPOLIST} ; do
     git clone git@bitbucket.org:procentric/procentrictlxutils.git
     git clone git@bitbucket.org:procentric/procentricupdatesbuilder.git
     git clone git@bitbucket.org:procentric/triveniepg.git
+    git clone git@mod.lge.com:2222/pcn/pcn.git
     "
     exit 1
   fi
