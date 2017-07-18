@@ -4,5 +4,6 @@ REPO=procentricupdatesbuilder
 cd ${WORKINGDIR}/${REPO}
 git checkout master
 
-./buildall.sh
+ant clean
 
+ant
