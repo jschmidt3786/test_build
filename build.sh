@@ -5,7 +5,7 @@ env
 bash pull_repos.sh
 bash select_branch.sh
 
-if [[ $Release == "1" ]] ; then
+if [[ $Release == "true" ]] ; then
   echo this is a release!
 else
   echo this is not a release
