@@ -5,5 +5,4 @@ REPO=phoenixphpclient
 
 echo checking out branch ${PHPbranch} in ${REPO}
 cd ${WORKINGDIR}/${REPO}
-git checkout -br ${PHPbranch}
-
+git checkout -b ${PHPbranch}
