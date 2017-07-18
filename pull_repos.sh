@@ -23,8 +23,8 @@ for repo in ${REPOLIST} ; do
     pushd ${repo} 1> /dev/null
     git fetch
     #echo do build stuff in ${repo}
-    git branch --all
-    echo
+    #git branch --all # helpful, but wordy
+    #echo
     popd 1> /dev/null
   else
     echo "the ${repo} repository is missing from our working directory"
