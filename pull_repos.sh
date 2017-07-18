@@ -9,7 +9,7 @@ ssh-add ~/.ssh/zenith_id_rsa
 echo
 
 # set to whatever, but ya gotta clone the repos below into place...
-WORKINGDIR=${HOME}/build
+#WORKINGDIR=${HOME}/build
 [ ! -d ${WORKINGDIR} ] && mkdir -p ${WORKINGDIR} && echo working directory not found. it has been created, but you still have some work to do...
 pushd ${WORKINGDIR} 1> /dev/null
 

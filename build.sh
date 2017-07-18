@@ -1,6 +1,7 @@
 #!/bin/bash -ex
 # master script
-env
+# global vars:
+export WORKINGDIR=${HOME}/build
 
 bash pull_repos.sh
 bash select_branch.sh
