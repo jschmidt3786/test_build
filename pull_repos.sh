@@ -4,10 +4,11 @@
 #  - zenith_id_rsa / zenith_id_rsa.pub
 #  - with proper permissions ( 600 / 644 )
 
-eval `ssh-agent`
-ssh-add ~/.ssh/zenith_id_rsa
-ssh-add ~/.ssh/id_rsa
-echo
+# testing this at the higher-level build.sh script
+#eval `ssh-agent`
+#ssh-add ~/.ssh/zenith_id_rsa
+#ssh-add ~/.ssh/id_rsa
+#echo
 
 # set to whatever, but ya gotta clone the repos below into place...
 #WORKINGDIR=${HOME}/build
@@ -51,6 +52,6 @@ for repo in ${REPOLIST} ; do
   fi
 done
 
-#env |grep -i agent
-kill ${SSH_AGENT_PID}
+# env |grep -i agent
+#kill ${SSH_AGENT_PID}
 
