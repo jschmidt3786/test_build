@@ -16,9 +16,8 @@
 pushd ${WORKINGDIR} 1> /dev/null
 
 # sync repositories
-#REPOLIST="pcdapp linux phoenixphpclient gbgem gem gemadminclient jdce networkfeeds procentricbootstrapscripts procentriclicensebuilder procentriclicenseutils procentrictlxutils procentricupdatesbuilder triveniepg pcn"
+REPOLIST="pcdapp linux phoenixphpclient gbgem gem gemadminclient jdce networkfeeds procentricbootstrapscripts procentriclicensebuilder procentriclicenseutils procentrictlxutils procentricupdatesbuilder triveniepg pcn"
 # drop pcdapp, linux, & pcn for now
-REPOLIST="phoenixphpclient gbgem gem gemadminclient jdce networkfeeds procentricbootstrapscripts procentriclicensebuilder procentriclicenseutils procentrictlxutils procentricupdatesbuilder triveniepg"
 for repo in ${REPOLIST} ; do
   if [[ -d ${repo} ]] ;then
     echo fetching changes in ${repo} repository
@@ -30,7 +29,7 @@ for repo in ${REPOLIST} ; do
     popd 1> /dev/null
   else
     echo "the ${repo} repository is missing from our working directory"
-    echo "possible fixes include:
+    echo "possible fixes include (assuming you have the proper ssh private key(s)):
     cd ${WORKINGDIR}
     git clone ssh://git@136.166.60.113:7999/pcp/pcdapp.git
     git clone ssh://git@136.166.60.113:7999/pcp/linux.git
