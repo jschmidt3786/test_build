@@ -7,7 +7,7 @@ first step, pull down all of the disparate repos.
 
 ## TODO
 
-1. work out where/how to pull and update the various versions/branches
+1. :heavy_check_mark: work out where/how to pull and update the various versions/branches
 1. build some stuff
 1. package some stuff
 1. deploy/release some stuff
