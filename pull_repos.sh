@@ -6,6 +6,7 @@
 
 eval `ssh-agent`
 ssh-add ~/.ssh/zenith_id_rsa
+ssh-add ~/.ssh/id_rsa
 echo
 
 # set to whatever, but ya gotta clone the repos below into place...
@@ -30,21 +31,21 @@ for repo in ${REPOLIST} ; do
     echo "the ${repo} repository is missing from our working directory"
     echo "possible fixes include:
     cd ${WORKINGDIR}
-    git clone git@136.166.60.113:7999/pcp/pcdapp.git
-    git clone git@136.166.60.113:7999/pcp/linux.git
-    git clone git@bitbucket.org:procentric/phoenixphpclient.git
-    git clone git@bitbucket.org:procentric/gbgem.git
-    git clone git@bitbucket.org:procentric/gem.git
-    git clone git@bitbucket.org:procentric/gemadminclient.git
-    git clone git@bitbucket.org:procentric/jdce.git
-    git clone git@bitbucket.org:procentric/networkfeeds.git
-    git clone git@bitbucket.org:procentric/procentricbootstrapscripts.git
-    git clone git@bitbucket.org:procentric/procentriclicensebuilder.git
-    git clone git@bitbucket.org:procentric/procentriclicenseutils.git
-    git clone git@bitbucket.org:procentric/procentrictlxutils.git
-    git clone git@bitbucket.org:procentric/procentricupdatesbuilder.git
-    git clone git@bitbucket.org:procentric/triveniepg.git
-    git clone git@mod.lge.com:2222/pcn/pcn.git
+    git clone ssh://git@136.166.60.113:7999/pcp/pcdapp.git
+    git clone ssh://git@136.166.60.113:7999/pcp/linux.git
+    git clone ssh://git@bitbucket.org:procentric/phoenixphpclient.git
+    git clone ssh://git@bitbucket.org:procentric/gbgem.git
+    git clone ssh://git@bitbucket.org:procentric/gem.git
+    git clone ssh://git@bitbucket.org:procentric/gemadminclient.git
+    git clone ssh://git@bitbucket.org:procentric/jdce.git
+    git clone ssh://git@bitbucket.org:procentric/networkfeeds.git
+    git clone ssh://git@bitbucket.org:procentric/procentricbootstrapscripts.git
+    git clone ssh://git@bitbucket.org:procentric/procentriclicensebuilder.git
+    git clone ssh://git@bitbucket.org:procentric/procentriclicenseutils.git
+    git clone ssh://git@bitbucket.org:procentric/procentrictlxutils.git
+    git clone ssh://git@bitbucket.org:procentric/procentricupdatesbuilder.git
+    git clone ssh://git@bitbucket.org:procentric/triveniepg.git
+    git clone ssh://git@mod.lge.com:2222/pcn/pcn.git
     "
     #exit 1
   fi

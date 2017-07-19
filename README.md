@@ -3,6 +3,7 @@
 first step, pull down all of the disparate repos.
  - pull_repos.sh fetches changes in all repos
  - select_branch.sh - checkout branches to build for the components needed *WIP*
+ - procentric.sh - run the 'buildall.sh' script to build the various java components
 
 ## TODO
 
