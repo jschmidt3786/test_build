@@ -2,6 +2,8 @@
 
 [![build status](https://gitlab.lge.net/jeff.schmidt/test_build/badges/feature/triggered_builds/build.svg)](https://gitlab.lge.net/jeff.schmidt/test_build/commits/feature/triggered_builds)
 
+[![coverage report](https://gitlab.lge.net/jeff.schmidt/test_build/badges/master/coverage.svg)](https://gitlab.lge.net/jeff.schmidt/test_build/commits/master)
+
 first step, pull down all of the disparate repos.
  - pull_repos.sh fetches changes in all repos (not quite all, will still leverage build scripts in some repos) :heavy_check_mark:
  - select_branch.sh - checkout branches to build for the components needed :heavy_check_mark:

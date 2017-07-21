@@ -1,5 +1,6 @@
 before_script:
   - env
+  - [[ ! -d ${HOME}/build ]] && mkdir -p ${HOME}/build ; cd ${HOME}/build
 
 fetch:
   - cd ${HOME}/build
