@@ -13,10 +13,13 @@ echo
 
 bash pull_repos.sh
 bash select_branch.sh
+
+# maybe this should be offloaded to a new Jenkins job
 bash procentric.sh
 
 if [[ $Release == "true" ]] ; then
   echo this is a release!
+  # do something else that will trigger the release process
 else
   echo this is not a release
 fi

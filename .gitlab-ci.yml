@@ -1,21 +1,24 @@
 before_script:
   - env
-  - [[ ! -d ${HOME}/build ]] && mkdir -p ${HOME}/build ; cd ${HOME}/build
+  - mkdir -p ${HOME}/build || true
 
 fetch:
   - cd ${HOME}/build
-  - cd pcdapp                     ; git fetch ; cd -
-  - cd linux                      ; git fetch ; cd -
-  - cd gbgem                      ; git fetch ; cd -
-  - cd gem                        ; git fetch ; cd -
-  - cd jdce                       ; git fetch ; cd -
-  - cd phoenixphpclient           ; git fetch ; cd -
-  - cd gemadminclient             ; git fetch ; cd -
-  - cd networkfeeds               ; git fetch ; cd -
-  - cd procentricbootstrapscripts ; git fetch ; cd -
-  - cd procentriclicensebuilder   ; git fetch ; cd -
-  - cd procentriclicenseutils     ; git fetch ; cd -
-  - cd procentrictlxutils         ; git fetch ; cd -
-  - cd procentricupdatesbuilder   ; git fetch ; cd -
-  - cd triveniepg                 ; git fetch ; cd -
-  - cd pcn                        ; git fetch ; cd -
+  - git clone ssh://git@136.166.60.113:7999/pcp/pcdapp.git
+  - git clone ssh://git@136.166.60.113:7999/pcp/linux.git
+  - git clone ssh://git@bitbucket.org:procentric/phoenixphpclient.git
+#  - cd pcdapp                     ; git fetch ; cd -
+#  - cd linux                      ; git fetch ; cd -
+#  - cd gbgem                      ; git fetch ; cd -
+#  - cd gem                        ; git fetch ; cd -
+#  - cd jdce                       ; git fetch ; cd -
+#  - cd phoenixphpclient           ; git fetch ; cd -
+#  - cd gemadminclient             ; git fetch ; cd -
+#  - cd networkfeeds               ; git fetch ; cd -
+#  - cd procentricbootstrapscripts ; git fetch ; cd -
+#  - cd procentriclicensebuilder   ; git fetch ; cd -
+#  - cd procentriclicenseutils     ; git fetch ; cd -
+#  - cd procentrictlxutils         ; git fetch ; cd -
+#  - cd procentricupdatesbuilder   ; git fetch ; cd -
+#  - cd triveniepg                 ; git fetch ; cd -
+#  - cd pcn                        ; git fetch ; cd -

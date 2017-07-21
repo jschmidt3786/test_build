@@ -4,12 +4,6 @@
 #  - zenith_id_rsa / zenith_id_rsa.pub
 #  - with proper permissions ( 600 / 644 )
 
-# testing this at the higher-level build.sh script
-#eval `ssh-agent`
-#ssh-add ~/.ssh/zenith_id_rsa
-#ssh-add ~/.ssh/id_rsa
-#echo
-
 # set to whatever, but ya gotta clone the repos below into place...
 #WORKINGDIR=${HOME}/build
 [ ! -d ${WORKINGDIR} ] && mkdir -p ${WORKINGDIR} && echo working directory not found. it has been created, but you still have some work to do...
@@ -23,9 +17,6 @@ for repo in ${REPOLIST} ; do
     echo fetching changes in ${repo} repository
     pushd ${repo} 1> /dev/null
     git fetch
-    #echo do build stuff in ${repo}
-    #git branch --all # helpful, but wordy
-    #echo
     popd 1> /dev/null
   else
     echo "the ${repo} repository is missing from our working directory"
@@ -50,7 +41,3 @@ for repo in ${REPOLIST} ; do
     #exit 1
   fi
 done
-
-# env |grep -i agent
-#kill ${SSH_AGENT_PID}
-

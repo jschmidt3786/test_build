@@ -7,9 +7,8 @@
 #ssh-add ~/.ssh/id_rsa
 #echo
 
-REPO=procentricupdatesbuilder
+REPO=phoenixphpclient
 cd ${WORKINGDIR}/${REPO}
-git checkout master
+git checkout ${PHPbranch}
 
-# need to modify: change internal logging to spit out to Jenkins
-sh buildall.sh
+
